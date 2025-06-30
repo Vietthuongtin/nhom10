@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("montanbui")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+37ce67a86de6ec394f2a9eb02b9d56e87d1e8d3e")]
 [assembly: System.Reflection.AssemblyProductAttribute("montanbui")]
 [assembly: System.Reflection.AssemblyTitleAttribute("montanbui")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

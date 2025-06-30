@@ -160,4 +160,5 @@ namespace montanbui.Controllers
             return _context.MonAns.Any(e => e.MaMon == id);
         }
     }
+
 }
