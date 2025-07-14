@@ -21,7 +21,7 @@ namespace montanbui.Controllers
         // GET: PhanHois
         public async Task<IActionResult> Index()
         {
-            var dataHe = _context.PhanHois.Include(p => p.KhachHang);
+            var dataHe = _context.PhanHoi.Include(p => p.KhachHang);
             return View(await dataHe.ToListAsync());
         }
 
@@ -33,7 +33,7 @@ namespace montanbui.Controllers
                 return NotFound();
             }
 
-            var phanHoi = await _context.PhanHois
+            var phanHoi = await _context.PhanHoi
                 .Include(p => p.KhachHang)
                 .FirstOrDefaultAsync(m => m.MaPH == id);
             if (phanHoi == null)
@@ -47,7 +47,7 @@ namespace montanbui.Controllers
         // GET: PhanHois/Create
         public IActionResult Create()
         {
-            ViewData["MaKH"] = new SelectList(_context.KhachHangs, "MaKH", "HoTen");
+            ViewData["MaKH"] = new SelectList(_context.KhachHang, "MaKH", "HoTen");
             return View();
         }
 
@@ -64,7 +64,7 @@ namespace montanbui.Controllers
                 await _context.SaveChangesAsync();
                 return RedirectToAction(nameof(Index));
             }
-            ViewData["MaKH"] = new SelectList(_context.KhachHangs, "MaKH", "HoTen", phanHoi.MaKH);
+            ViewData["MaKH"] = new SelectList(_context.KhachHang, "MaKH", "HoTen", phanHoi.MaKH);
             return View(phanHoi);
         }
 
@@ -76,12 +76,12 @@ namespace montanbui.Controllers
                 return NotFound();
             }
 
-            var phanHoi = await _context.PhanHois.FindAsync(id);
+            var phanHoi = await _context.PhanHoi.FindAsync(id);
             if (phanHoi == null)
             {
                 return NotFound();
             }
-            ViewData["MaKH"] = new SelectList(_context.KhachHangs, "MaKH", "HoTen", phanHoi.MaKH);
+            ViewData["MaKH"] = new SelectList(_context.KhachHang, "MaKH", "HoTen", phanHoi.MaKH);
             return View(phanHoi);
         }
 
@@ -117,7 +117,7 @@ namespace montanbui.Controllers
                 }
                 return RedirectToAction(nameof(Index));
             }
-            ViewData["MaKH"] = new SelectList(_context.KhachHangs, "MaKH", "HoTen", phanHoi.MaKH);
+            ViewData["MaKH"] = new SelectList(_context.KhachHang, "MaKH", "HoTen", phanHoi.MaKH);
             return View(phanHoi);
         }
 
@@ -129,7 +129,7 @@ namespace montanbui.Controllers
                 return NotFound();
             }
 
-            var phanHoi = await _context.PhanHois
+            var phanHoi = await _context.PhanHoi
                 .Include(p => p.KhachHang)
                 .FirstOrDefaultAsync(m => m.MaPH == id);
             if (phanHoi == null)
@@ -145,10 +145,10 @@ namespace montanbui.Controllers
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> DeleteConfirmed(int id)
         {
-            var phanHoi = await _context.PhanHois.FindAsync(id);
+            var phanHoi = await _context.PhanHoi.FindAsync(id);
             if (phanHoi != null)
             {
-                _context.PhanHois.Remove(phanHoi);
+                _context.PhanHoi.Remove(phanHoi);
             }
 
             await _context.SaveChangesAsync();
@@ -157,7 +157,7 @@ namespace montanbui.Controllers
 
         private bool PhanHoiExists(int id)
         {
-            return _context.PhanHois.Any(e => e.MaPH == id);
+            return _context.PhanHoi.Any(e => e.MaPH == id);
         }
     }
 }

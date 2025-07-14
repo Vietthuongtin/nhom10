@@ -13,6 +13,46 @@
       "PackagePath": "staticwebassets\\favicon.ico"
     },
     {
+      "Id": "C:\\Users\\Admin\\source\\repos\\tanbui\\montanbui\\montanbui\\wwwroot\\images\\banh_xeo.jpg",
+      "PackagePath": "staticwebassets\\images\\banh_xeo.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\source\\repos\\tanbui\\montanbui\\montanbui\\wwwroot\\images\\banhmi_thitnuong.jpg",
+      "PackagePath": "staticwebassets\\images\\banhmi_thitnuong.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\source\\repos\\tanbui\\montanbui\\montanbui\\wwwroot\\images\\burger_phomai.jpg",
+      "PackagePath": "staticwebassets\\images\\burger_phomai.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\source\\repos\\tanbui\\montanbui\\montanbui\\wwwroot\\images\\combo_ga_khoai.jpg",
+      "PackagePath": "staticwebassets\\images\\combo_ga_khoai.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\source\\repos\\tanbui\\montanbui\\montanbui\\wwwroot\\images\\comgateriyaki.jpg",
+      "PackagePath": "staticwebassets\\images\\comgateriyaki.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\source\\repos\\tanbui\\montanbui\\montanbui\\wwwroot\\images\\myy_carbonara.jpg",
+      "PackagePath": "staticwebassets\\images\\myy_carbonara.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\source\\repos\\tanbui\\montanbui\\montanbui\\wwwroot\\images\\pho_bo_tai.jpg",
+      "PackagePath": "staticwebassets\\images\\pho_bo_tai.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\source\\repos\\tanbui\\montanbui\\montanbui\\wwwroot\\images\\pizza_haisan.jpg",
+      "PackagePath": "staticwebassets\\images\\pizza_haisan.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\source\\repos\\tanbui\\montanbui\\montanbui\\wwwroot\\images\\salad_raucu.jpg",
+      "PackagePath": "staticwebassets\\images\\salad_raucu.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\source\\repos\\tanbui\\montanbui\\montanbui\\wwwroot\\images\\trasua_tranchau.jpg",
+      "PackagePath": "staticwebassets\\images\\trasua_tranchau.jpg"
+    },
+    {
       "Id": "C:\\Users\\Admin\\source\\repos\\tanbui\\montanbui\\montanbui\\wwwroot\\js\\site.js",
       "PackagePath": "staticwebassets\\js\\site.js"
     },

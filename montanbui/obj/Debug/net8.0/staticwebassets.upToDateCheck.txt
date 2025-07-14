@@ -1,5 +1,15 @@
 wwwroot\css\site.css
 wwwroot\favicon.ico
+wwwroot\images\banh_xeo.jpg
+wwwroot\images\banhmi_thitnuong.jpg
+wwwroot\images\burger_phomai.jpg
+wwwroot\images\combo_ga_khoai.jpg
+wwwroot\images\comgateriyaki.jpg
+wwwroot\images\myy_carbonara.jpg
+wwwroot\images\pho_bo_tai.jpg
+wwwroot\images\pizza_haisan.jpg
+wwwroot\images\salad_raucu.jpg
+wwwroot\images\trasua_tranchau.jpg
 wwwroot\js\site.js
 wwwroot\lib\bootstrap\dist\css\bootstrap.css
 wwwroot\lib\bootstrap\dist\css\bootstrap.css.map

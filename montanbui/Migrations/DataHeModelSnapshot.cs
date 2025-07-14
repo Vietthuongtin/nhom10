@@ -353,6 +353,27 @@ namespace montanbui.Migrations
                     b.ToTable("PhanHois");
                 });
 
+            modelBuilder.Entity("montanbui.Models.dangnhap", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    MySqlPropertyBuilderExtensions.UseMySqlIdentityColumn(b.Property<int>("Id"));
+
+                    b.Property<string>("MatKhau")
+                        .IsRequired()
+                        .HasColumnType("longtext");
+
+                    b.Property<string>("TenDangNhap")
+                        .IsRequired()
+                        .HasColumnType("longtext");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("dangnhaps");
+                });
+
             modelBuilder.Entity("montanbui.Models.CT_DonHang", b =>
                 {
                     b.HasOne("montanbui.Models.DonHang", "DonHang")

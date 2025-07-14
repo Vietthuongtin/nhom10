@@ -1,41 +1,46 @@
 ﻿@model IEnumerable<montanbui.Models.LoaiMonAn>
 
 @{
-    ViewData["Title"] = "Index";
+    ViewData["Title"] = "Loại món ăn";
 }
 
-<h1>Index</h1>
+<div class="container mt-5">
+    <h2 class="text-center mb-4">📂 Danh Sách Loại Món Ăn</h2>
 
-<p>
-    <a asp-action="Create">Create New</a>
-</p>
-<table class="table">
-    <thead>
-        <tr>
-            <th>
-                @Html.DisplayNameFor(model => model.TenLoai)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.MoTa)
-            </th>
-            <th></th>
-        </tr>
-    </thead>
-    <tbody>
-@foreach (var item in Model) {
-        <tr>
-            <td>
-                @Html.DisplayFor(modelItem => item.TenLoai)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.MoTa)
-            </td>
-            <td>
-                <a asp-action="Edit" asp-route-id="@item.MaLoai">Edit</a> |
-                <a asp-action="Details" asp-route-id="@item.MaLoai">Details</a> |
-                <a asp-action="Delete" asp-route-id="@item.MaLoai">Delete</a>
-            </td>
-        </tr>
-}
-    </tbody>
-</table>
+    <form method="get" asp-action="Index" class="mb-3 row">
+        <div class="col-md-10">
+            <input type="text" name="searchString" class="form-control" placeholder="🔍 Tìm theo tên loại món...">
+        </div>
+        <div class="col-md-2">
+            <button type="submit" class="btn btn-primary w-100">Tìm</button>
+        </div>
+    </form>
+
+    <p>
+        <a asp-action="Create" class="btn btn-success">➕ Thêm Loại Món Mới</a>
+    </p>
+
+    <table class="table table-hover table-bordered">
+        <thead class="table-dark">
+            <tr>
+                <th>Tên loại món</th>
+                <th>Mô tả</th>
+                <th style="width: 150px;">Thao tác</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var item in Model)
+            {
+                <tr>
+                    <td>@item.TenLoai</td>
+                    <td>@item.MoTa</td>
+                    <td>
+                        <a asp-action="Edit" asp-route-id="@item.MaLoai" class="btn btn-sm btn-warning">✏️ Sửa</a>
+                        <a asp-action="Details" asp-route-id="@item.MaLoai" class="btn btn-sm btn-info">👁️ Xem</a>
+                        <a asp-action="Delete" asp-route-id="@item.MaLoai" class="btn btn-sm btn-danger">🗑️ Xóa</a>
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+</div>

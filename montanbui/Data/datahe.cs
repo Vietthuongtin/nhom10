@@ -9,14 +9,16 @@ namespace montanbui.Models
         {
         }
 
-        public DbSet<NhanVien> NhanViens { get; set; }
-        public DbSet<KhachHang> KhachHangs { get; set; }
-        public DbSet<NguyenLieu> NguyenLieus { get; set; }
-        public DbSet<LoaiMonAn> LoaiMonAns { get; set; }
-        public DbSet<MonAn> MonAns { get; set; }
-        public DbSet<DonHang> DonHangs { get; set; }
-        public DbSet<CT_DonHang> CT_DonHangs { get; set; }
-        public DbSet<DatBan> DatBans { get; set; }
-        public DbSet<PhanHoi> PhanHois { get; set; }
+        public DbSet<NhanVien> NhanVien { get; set; }
+        public DbSet<KhachHang> KhachHang { get; set; }
+        public DbSet<NguyenLieu> NguyenLieu { get; set; }
+        public DbSet<LoaiMonAn> LoaiMonAn { get; set; }
+        public DbSet<MonAn> MonAn { get; set; }
+        public DbSet<DonHang> DonHang { get; set; }
+        public DbSet<CT_DonHang> CT_DonHang { get; set; }
+        public DbSet<DatBan> DatBan { get; set; }
+        public DbSet<PhanHoi> PhanHoi { get; set; }
+        public DbSet<dangnhap> dangnhap { get; set; }
+
     }
 }

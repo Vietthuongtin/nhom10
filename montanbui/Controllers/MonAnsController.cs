@@ -21,7 +21,7 @@ namespace montanbui.Controllers
         // GET: MonAns
         public async Task<IActionResult> Index()
         {
-            var dataHe = _context.MonAns.Include(m => m.LoaiMonAn);
+            var dataHe = _context.MonAn.Include(m => m.LoaiMonAn);
             return View(await dataHe.ToListAsync());
         }
 
@@ -33,7 +33,7 @@ namespace montanbui.Controllers
                 return NotFound();
             }
 
-            var monAn = await _context.MonAns
+            var monAn = await _context.MonAn
                 .Include(m => m.LoaiMonAn)
                 .FirstOrDefaultAsync(m => m.MaMon == id);
             if (monAn == null)
@@ -47,7 +47,7 @@ namespace montanbui.Controllers
         // GET: MonAns/Create
         public IActionResult Create()
         {
-            ViewData["MaLoai"] = new SelectList(_context.LoaiMonAns, "MaLoai", "TenLoai");
+            ViewData["MaLoai"] = new SelectList(_context.LoaiMonAn, "MaLoai", "TenLoai");
             return View();
         }
 
@@ -64,7 +64,7 @@ namespace montanbui.Controllers
                 await _context.SaveChangesAsync();
                 return RedirectToAction(nameof(Index));
             }
-            ViewData["MaLoai"] = new SelectList(_context.LoaiMonAns, "MaLoai", "TenLoai", monAn.MaLoai);
+            ViewData["MaLoai"] = new SelectList(_context.LoaiMonAn, "MaLoai", "TenLoai", monAn.MaLoai);
             return View(monAn);
         }
 
@@ -76,12 +76,12 @@ namespace montanbui.Controllers
                 return NotFound();
             }
 
-            var monAn = await _context.MonAns.FindAsync(id);
+            var monAn = await _context.MonAn.FindAsync(id);
             if (monAn == null)
             {
                 return NotFound();
             }
-            ViewData["MaLoai"] = new SelectList(_context.LoaiMonAns, "MaLoai", "TenLoai", monAn.MaLoai);
+            ViewData["MaLoai"] = new SelectList(_context.LoaiMonAn, "MaLoai", "TenLoai", monAn.MaLoai);
             return View(monAn);
         }
 
@@ -117,7 +117,7 @@ namespace montanbui.Controllers
                 }
                 return RedirectToAction(nameof(Index));
             }
-            ViewData["MaLoai"] = new SelectList(_context.LoaiMonAns, "MaLoai", "TenLoai", monAn.MaLoai);
+            ViewData["MaLoai"] = new SelectList(_context.LoaiMonAn, "MaLoai", "TenLoai", monAn.MaLoai);
             return View(monAn);
         }
 
@@ -129,7 +129,7 @@ namespace montanbui.Controllers
                 return NotFound();
             }
 
-            var monAn = await _context.MonAns
+            var monAn = await _context.MonAn
                 .Include(m => m.LoaiMonAn)
                 .FirstOrDefaultAsync(m => m.MaMon == id);
             if (monAn == null)
@@ -145,10 +145,10 @@ namespace montanbui.Controllers
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> DeleteConfirmed(int id)
         {
-            var monAn = await _context.MonAns.FindAsync(id);
+            var monAn = await _context.MonAn.FindAsync(id);
             if (monAn != null)
             {
-                _context.MonAns.Remove(monAn);
+                _context.MonAn.Remove(monAn);
             }
 
             await _context.SaveChangesAsync();
@@ -157,8 +157,58 @@ namespace montanbui.Controllers
 
         private bool MonAnExists(int id)
         {
-            return _context.MonAns.Any(e => e.MaMon == id);
+            return _context.MonAn.Any(e => e.MaMon == id);
         }
+        public class MonAnController : Controller
+        {
+            public IActionResult Index()
+            {
+                return View();
+            }
+        }   
+        [HttpPost]
+        public IActionResult Mua(int id, int SoLuong)
+        {
+            var mon = _context.MonAn.Find(id);
+            if (mon == null)
+            {
+                return NotFound();
+            }
+
+            var donHang = new DonHang
+            {
+                MaKH = 1, // đảm bảo tồn tại MaKH = 1
+                MaNV = 1, // đảm bảo tồn tại MaNV = 1
+                NgayDat = DateTime.Now,
+                TrangThai = "Chờ xử lý",
+                TongTien = mon.GiaBan *SoLuong,
+                GhiChu = ""
+            };
+
+            _context.DonHang.Add(donHang);
+            _context.SaveChanges(); // ❗ Cần dòng này trước để có donHang.MaDH
+
+            var ct = new CT_DonHang
+            {
+                MaDH = donHang.MaDH,
+                MaMon = mon.MaMon,
+                SoLuong = SoLuong,
+                DonGia = mon.GiaBan
+            };
+            TempData["SuccessMessage"] = "🛒 Mua hàng thành công!";
+            return RedirectToAction("Index");
+
+
+            _context.CT_DonHang.Add(ct);
+            _context.SaveChanges();
+
+            return RedirectToAction("Index");
+            
+            
+        }
+
+
     }
 
 }
+

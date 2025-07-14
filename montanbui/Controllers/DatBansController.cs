@@ -21,7 +21,7 @@ namespace montanbui.Controllers
         // GET: DatBans
         public async Task<IActionResult> Index()
         {
-            var dataHe = _context.DatBans.Include(d => d.KhachHang);
+            var dataHe = _context.DatBan.Include(d => d.KhachHang);
             return View(await dataHe.ToListAsync());
         }
 
@@ -33,7 +33,7 @@ namespace montanbui.Controllers
                 return NotFound();
             }
 
-            var datBan = await _context.DatBans
+            var datBan = await _context.DatBan
                 .Include(d => d.KhachHang)
                 .FirstOrDefaultAsync(m => m.MaDatBan == id);
             if (datBan == null)
@@ -47,7 +47,7 @@ namespace montanbui.Controllers
         // GET: DatBans/Create
         public IActionResult Create()
         {
-            ViewData["MaKH"] = new SelectList(_context.KhachHangs, "MaKH", "HoTen");
+            ViewData["MaKH"] = new SelectList(_context.KhachHang, "MaKH", "HoTen");
             return View();
         }
 
@@ -64,7 +64,7 @@ namespace montanbui.Controllers
                 await _context.SaveChangesAsync();
                 return RedirectToAction(nameof(Index));
             }
-            ViewData["MaKH"] = new SelectList(_context.KhachHangs, "MaKH", "HoTen", datBan.MaKH);
+            ViewData["MaKH"] = new SelectList(_context.KhachHang, "MaKH", "HoTen", datBan.MaKH);
             return View(datBan);
         }
 
@@ -76,12 +76,12 @@ namespace montanbui.Controllers
                 return NotFound();
             }
 
-            var datBan = await _context.DatBans.FindAsync(id);
+            var datBan = await _context.DatBan.FindAsync(id);
             if (datBan == null)
             {
                 return NotFound();
             }
-            ViewData["MaKH"] = new SelectList(_context.KhachHangs, "MaKH", "HoTen", datBan.MaKH);
+            ViewData["MaKH"] = new SelectList(_context.KhachHang, "MaKH", "HoTen", datBan.MaKH);
             return View(datBan);
         }
 
@@ -117,7 +117,7 @@ namespace montanbui.Controllers
                 }
                 return RedirectToAction(nameof(Index));
             }
-            ViewData["MaKH"] = new SelectList(_context.KhachHangs, "MaKH", "HoTen", datBan.MaKH);
+            ViewData["MaKH"] = new SelectList(_context.KhachHang, "MaKH", "HoTen", datBan.MaKH);
             return View(datBan);
         }
 
@@ -129,7 +129,7 @@ namespace montanbui.Controllers
                 return NotFound();
             }
 
-            var datBan = await _context.DatBans
+            var datBan = await _context.DatBan
                 .Include(d => d.KhachHang)
                 .FirstOrDefaultAsync(m => m.MaDatBan == id);
             if (datBan == null)
@@ -145,10 +145,10 @@ namespace montanbui.Controllers
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> DeleteConfirmed(int id)
         {
-            var datBan = await _context.DatBans.FindAsync(id);
+            var datBan = await _context.DatBan.FindAsync(id);
             if (datBan != null)
             {
-                _context.DatBans.Remove(datBan);
+                _context.DatBan.Remove(datBan);
             }
 
             await _context.SaveChangesAsync();
@@ -157,7 +157,7 @@ namespace montanbui.Controllers
 
         private bool DatBanExists(int id)
         {
-            return _context.DatBans.Any(e => e.MaDatBan == id);
+            return _context.DatBan.Any(e => e.MaDatBan == id);
         }
     }
 }

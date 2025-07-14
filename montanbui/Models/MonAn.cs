@@ -4,6 +4,7 @@ using System.ComponentModel.DataAnnotations.Schema;
 
 namespace montanbui.Models
 {
+    [Table("monan")] // 🔥 THÊM DÒNG NÀY
     public class MonAn
     {
         [Key]

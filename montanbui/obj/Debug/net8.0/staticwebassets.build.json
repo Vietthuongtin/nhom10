@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "OM3yBvXjpmzldyy1Vv9B/i7UVQ6Jdcnw3Bb4uf/QZNw=",
+  "Hash": "Pdw3hIU6fqnCU6amvwITeHPHZdiIsVirAp74j48qpJI=",
   "Source": "montanbui",
   "BasePath": "_content/montanbui",
   "Mode": "Default",
@@ -73,8 +73,8 @@
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "e5yi6fob3w",
-      "Integrity": "Yh9gd7fEcl0+t/EueQVgKeO4iv5KL9JfRQflsCB+3Xw=",
+      "Fingerprint": "y6gmkjalor",
+      "Integrity": "hmR/Qmlk+hXS7KTTbDLxWL4AQm0jL7u2fBcR6Sy2KLI=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\css\\site.css"
@@ -99,6 +99,216 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\favicon.ico"
+    },
+    {
+      "Identity": "C:\\Users\\Admin\\source\\repos\\tanbui\\montanbui\\montanbui\\wwwroot\\images\\banh_xeo.jpg",
+      "SourceId": "montanbui",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Admin\\source\\repos\\tanbui\\montanbui\\montanbui\\wwwroot\\",
+      "BasePath": "_content/montanbui",
+      "RelativePath": "images/banh_xeo#[.{fingerprint}]?.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "beqrkksil8",
+      "Integrity": "nZ3rqiOyGVztiCN0gxQgREjG70KJUdR70pYXSdboKkU=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\banh_xeo.jpg"
+    },
+    {
+      "Identity": "C:\\Users\\Admin\\source\\repos\\tanbui\\montanbui\\montanbui\\wwwroot\\images\\banhmi_thitnuong.jpg",
+      "SourceId": "montanbui",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Admin\\source\\repos\\tanbui\\montanbui\\montanbui\\wwwroot\\",
+      "BasePath": "_content/montanbui",
+      "RelativePath": "images/banhmi_thitnuong#[.{fingerprint}]?.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "8mqjerlzoj",
+      "Integrity": "gDfX4R6nodES6z6NiJoRCKhjlaBgKGQ7NvRD8RxCdR0=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\banhmi_thitnuong.jpg"
+    },
+    {
+      "Identity": "C:\\Users\\Admin\\source\\repos\\tanbui\\montanbui\\montanbui\\wwwroot\\images\\burger_phomai.jpg",
+      "SourceId": "montanbui",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Admin\\source\\repos\\tanbui\\montanbui\\montanbui\\wwwroot\\",
+      "BasePath": "_content/montanbui",
+      "RelativePath": "images/burger_phomai#[.{fingerprint}]?.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "j49a9c167l",
+      "Integrity": "szXdg/PyyBprR3oADVbAKk5mqDz+so7vkC8XjsbBGFU=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\burger_phomai.jpg"
+    },
+    {
+      "Identity": "C:\\Users\\Admin\\source\\repos\\tanbui\\montanbui\\montanbui\\wwwroot\\images\\combo_ga_khoai.jpg",
+      "SourceId": "montanbui",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Admin\\source\\repos\\tanbui\\montanbui\\montanbui\\wwwroot\\",
+      "BasePath": "_content/montanbui",
+      "RelativePath": "images/combo_ga_khoai#[.{fingerprint}]?.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "0rkdanfia1",
+      "Integrity": "tN/QjUYUMWz6FEu/TgoBQVwgraW+464vly7a7FkRj9M=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\combo_ga_khoai.jpg"
+    },
+    {
+      "Identity": "C:\\Users\\Admin\\source\\repos\\tanbui\\montanbui\\montanbui\\wwwroot\\images\\comgateriyaki.jpg",
+      "SourceId": "montanbui",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Admin\\source\\repos\\tanbui\\montanbui\\montanbui\\wwwroot\\",
+      "BasePath": "_content/montanbui",
+      "RelativePath": "images/comgateriyaki#[.{fingerprint}]?.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "dghp7mbntg",
+      "Integrity": "Y+zlLmbWAKaHcS3w0TcplOGx0bet0tQokphwyT16hUc=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\comgateriyaki.jpg"
+    },
+    {
+      "Identity": "C:\\Users\\Admin\\source\\repos\\tanbui\\montanbui\\montanbui\\wwwroot\\images\\myy_carbonara.jpg",
+      "SourceId": "montanbui",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Admin\\source\\repos\\tanbui\\montanbui\\montanbui\\wwwroot\\",
+      "BasePath": "_content/montanbui",
+      "RelativePath": "images/myy_carbonara#[.{fingerprint}]?.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "bsdj3d0739",
+      "Integrity": "i8OPIXnba1x4Gf+74hMk/Nbck3nMKDdQAjTwQvlu/vg=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\myy_carbonara.jpg"
+    },
+    {
+      "Identity": "C:\\Users\\Admin\\source\\repos\\tanbui\\montanbui\\montanbui\\wwwroot\\images\\pho_bo_tai.jpg",
+      "SourceId": "montanbui",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Admin\\source\\repos\\tanbui\\montanbui\\montanbui\\wwwroot\\",
+      "BasePath": "_content/montanbui",
+      "RelativePath": "images/pho_bo_tai#[.{fingerprint}]?.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "ein91g9fht",
+      "Integrity": "uu+CvPRvEHLfrhZKVY3v8FtZqvRuGPHRnORQehavQBQ=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\pho_bo_tai.jpg"
+    },
+    {
+      "Identity": "C:\\Users\\Admin\\source\\repos\\tanbui\\montanbui\\montanbui\\wwwroot\\images\\pizza_haisan.jpg",
+      "SourceId": "montanbui",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Admin\\source\\repos\\tanbui\\montanbui\\montanbui\\wwwroot\\",
+      "BasePath": "_content/montanbui",
+      "RelativePath": "images/pizza_haisan#[.{fingerprint}]?.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "u90fp1t9u8",
+      "Integrity": "3uPGI5D1h0eh3ksJLYvQLSSoJj3RuKR+Ys+7kbMxlAg=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\pizza_haisan.jpg"
+    },
+    {
+      "Identity": "C:\\Users\\Admin\\source\\repos\\tanbui\\montanbui\\montanbui\\wwwroot\\images\\salad_raucu.jpg",
+      "SourceId": "montanbui",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Admin\\source\\repos\\tanbui\\montanbui\\montanbui\\wwwroot\\",
+      "BasePath": "_content/montanbui",
+      "RelativePath": "images/salad_raucu#[.{fingerprint}]?.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "wq1psu3tz4",
+      "Integrity": "6OYTcqxoPRCMCoJruHKp0lHVb5ZEwQNz//+sPvBNOZY=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\salad_raucu.jpg"
+    },
+    {
+      "Identity": "C:\\Users\\Admin\\source\\repos\\tanbui\\montanbui\\montanbui\\wwwroot\\images\\trasua_tranchau.jpg",
+      "SourceId": "montanbui",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Admin\\source\\repos\\tanbui\\montanbui\\montanbui\\wwwroot\\",
+      "BasePath": "_content/montanbui",
+      "RelativePath": "images/trasua_tranchau#[.{fingerprint}]?.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "bcurksptux",
+      "Integrity": "pdmpi5wJmNyYRNLwU5QJp28BgCL4PWpqIDh1QvlRkkw=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\trasua_tranchau.jpg"
     },
     {
       "Identity": "C:\\Users\\Admin\\source\\repos\\tanbui\\montanbui\\montanbui\\wwwroot\\js\\site.js",
@@ -1331,7 +1541,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "1093"
+          "Value": "775"
         },
         {
           "Name": "Content-Type",
@@ -1339,11 +1549,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"Yh9gd7fEcl0+t/EueQVgKeO4iv5KL9JfRQflsCB+3Xw=\""
+          "Value": "\"hmR/Qmlk+hXS7KTTbDLxWL4AQm0jL7u2fBcR6Sy2KLI=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Mon, 30 Jun 2025 07:16:04 GMT"
+          "Value": "Sun, 13 Jul 2025 14:03:54 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -1353,12 +1563,12 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-Yh9gd7fEcl0+t/EueQVgKeO4iv5KL9JfRQflsCB+3Xw="
+          "Value": "sha256-hmR/Qmlk+hXS7KTTbDLxWL4AQm0jL7u2fBcR6Sy2KLI="
         }
       ]
     },
     {
-      "Route": "css/site.e5yi6fob3w.css",
+      "Route": "css/site.y6gmkjalor.css",
       "AssetFile": "C:\\Users\\Admin\\source\\repos\\tanbui\\montanbui\\montanbui\\wwwroot\\css\\site.css",
       "Selectors": [],
       "ResponseHeaders": [
@@ -1368,7 +1578,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "1093"
+          "Value": "775"
         },
         {
           "Name": "Content-Type",
@@ -1376,11 +1586,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"Yh9gd7fEcl0+t/EueQVgKeO4iv5KL9JfRQflsCB+3Xw=\""
+          "Value": "\"hmR/Qmlk+hXS7KTTbDLxWL4AQm0jL7u2fBcR6Sy2KLI=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Mon, 30 Jun 2025 07:16:04 GMT"
+          "Value": "Sun, 13 Jul 2025 14:03:54 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -1390,7 +1600,7 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "e5yi6fob3w"
+          "Value": "y6gmkjalor"
         },
         {
           "Name": "label",
@@ -1398,7 +1608,7 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-Yh9gd7fEcl0+t/EueQVgKeO4iv5KL9JfRQflsCB+3Xw="
+          "Value": "sha256-hmR/Qmlk+hXS7KTTbDLxWL4AQm0jL7u2fBcR6Sy2KLI="
         }
       ]
     },
@@ -1481,6 +1691,826 @@
         {
           "Name": "integrity",
           "Value": "sha256-Jtxf9L+5ITKRc1gIRl4VbUpGkRNfOBXjYTdhJD4facM="
+        }
+      ]
+    },
+    {
+      "Route": "images/banh_xeo.beqrkksil8.jpg",
+      "AssetFile": "C:\\Users\\Admin\\source\\repos\\tanbui\\montanbui\\montanbui\\wwwroot\\images\\banh_xeo.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "29178"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"nZ3rqiOyGVztiCN0gxQgREjG70KJUdR70pYXSdboKkU=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 14 Jul 2025 06:09:03 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "beqrkksil8"
+        },
+        {
+          "Name": "label",
+          "Value": "images/banh_xeo.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-nZ3rqiOyGVztiCN0gxQgREjG70KJUdR70pYXSdboKkU="
+        }
+      ]
+    },
+    {
+      "Route": "images/banh_xeo.jpg",
+      "AssetFile": "C:\\Users\\Admin\\source\\repos\\tanbui\\montanbui\\montanbui\\wwwroot\\images\\banh_xeo.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "29178"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"nZ3rqiOyGVztiCN0gxQgREjG70KJUdR70pYXSdboKkU=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 14 Jul 2025 06:09:03 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-nZ3rqiOyGVztiCN0gxQgREjG70KJUdR70pYXSdboKkU="
+        }
+      ]
+    },
+    {
+      "Route": "images/banhmi_thitnuong.8mqjerlzoj.jpg",
+      "AssetFile": "C:\\Users\\Admin\\source\\repos\\tanbui\\montanbui\\montanbui\\wwwroot\\images\\banhmi_thitnuong.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "22994"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"gDfX4R6nodES6z6NiJoRCKhjlaBgKGQ7NvRD8RxCdR0=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 14 Jul 2025 06:05:22 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "8mqjerlzoj"
+        },
+        {
+          "Name": "label",
+          "Value": "images/banhmi_thitnuong.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-gDfX4R6nodES6z6NiJoRCKhjlaBgKGQ7NvRD8RxCdR0="
+        }
+      ]
+    },
+    {
+      "Route": "images/banhmi_thitnuong.jpg",
+      "AssetFile": "C:\\Users\\Admin\\source\\repos\\tanbui\\montanbui\\montanbui\\wwwroot\\images\\banhmi_thitnuong.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "22994"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"gDfX4R6nodES6z6NiJoRCKhjlaBgKGQ7NvRD8RxCdR0=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 14 Jul 2025 06:05:22 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-gDfX4R6nodES6z6NiJoRCKhjlaBgKGQ7NvRD8RxCdR0="
+        }
+      ]
+    },
+    {
+      "Route": "images/burger_phomai.j49a9c167l.jpg",
+      "AssetFile": "C:\\Users\\Admin\\source\\repos\\tanbui\\montanbui\\montanbui\\wwwroot\\images\\burger_phomai.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "63341"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"szXdg/PyyBprR3oADVbAKk5mqDz+so7vkC8XjsbBGFU=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 13 Jul 2025 13:22:48 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "j49a9c167l"
+        },
+        {
+          "Name": "label",
+          "Value": "images/burger_phomai.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-szXdg/PyyBprR3oADVbAKk5mqDz+so7vkC8XjsbBGFU="
+        }
+      ]
+    },
+    {
+      "Route": "images/burger_phomai.jpg",
+      "AssetFile": "C:\\Users\\Admin\\source\\repos\\tanbui\\montanbui\\montanbui\\wwwroot\\images\\burger_phomai.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "63341"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"szXdg/PyyBprR3oADVbAKk5mqDz+so7vkC8XjsbBGFU=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 13 Jul 2025 13:22:48 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-szXdg/PyyBprR3oADVbAKk5mqDz+so7vkC8XjsbBGFU="
+        }
+      ]
+    },
+    {
+      "Route": "images/combo_ga_khoai.0rkdanfia1.jpg",
+      "AssetFile": "C:\\Users\\Admin\\source\\repos\\tanbui\\montanbui\\montanbui\\wwwroot\\images\\combo_ga_khoai.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "708925"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"tN/QjUYUMWz6FEu/TgoBQVwgraW+464vly7a7FkRj9M=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 14 Jul 2025 06:08:37 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "0rkdanfia1"
+        },
+        {
+          "Name": "label",
+          "Value": "images/combo_ga_khoai.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-tN/QjUYUMWz6FEu/TgoBQVwgraW+464vly7a7FkRj9M="
+        }
+      ]
+    },
+    {
+      "Route": "images/combo_ga_khoai.jpg",
+      "AssetFile": "C:\\Users\\Admin\\source\\repos\\tanbui\\montanbui\\montanbui\\wwwroot\\images\\combo_ga_khoai.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "708925"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"tN/QjUYUMWz6FEu/TgoBQVwgraW+464vly7a7FkRj9M=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 14 Jul 2025 06:08:37 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-tN/QjUYUMWz6FEu/TgoBQVwgraW+464vly7a7FkRj9M="
+        }
+      ]
+    },
+    {
+      "Route": "images/comgateriyaki.dghp7mbntg.jpg",
+      "AssetFile": "C:\\Users\\Admin\\source\\repos\\tanbui\\montanbui\\montanbui\\wwwroot\\images\\comgateriyaki.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "30164"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"Y+zlLmbWAKaHcS3w0TcplOGx0bet0tQokphwyT16hUc=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 14 Jul 2025 06:02:28 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "dghp7mbntg"
+        },
+        {
+          "Name": "label",
+          "Value": "images/comgateriyaki.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-Y+zlLmbWAKaHcS3w0TcplOGx0bet0tQokphwyT16hUc="
+        }
+      ]
+    },
+    {
+      "Route": "images/comgateriyaki.jpg",
+      "AssetFile": "C:\\Users\\Admin\\source\\repos\\tanbui\\montanbui\\montanbui\\wwwroot\\images\\comgateriyaki.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "30164"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"Y+zlLmbWAKaHcS3w0TcplOGx0bet0tQokphwyT16hUc=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 14 Jul 2025 06:02:28 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-Y+zlLmbWAKaHcS3w0TcplOGx0bet0tQokphwyT16hUc="
+        }
+      ]
+    },
+    {
+      "Route": "images/myy_carbonara.bsdj3d0739.jpg",
+      "AssetFile": "C:\\Users\\Admin\\source\\repos\\tanbui\\montanbui\\montanbui\\wwwroot\\images\\myy_carbonara.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "20850"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"i8OPIXnba1x4Gf+74hMk/Nbck3nMKDdQAjTwQvlu/vg=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 14 Jul 2025 06:04:30 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "bsdj3d0739"
+        },
+        {
+          "Name": "label",
+          "Value": "images/myy_carbonara.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-i8OPIXnba1x4Gf+74hMk/Nbck3nMKDdQAjTwQvlu/vg="
+        }
+      ]
+    },
+    {
+      "Route": "images/myy_carbonara.jpg",
+      "AssetFile": "C:\\Users\\Admin\\source\\repos\\tanbui\\montanbui\\montanbui\\wwwroot\\images\\myy_carbonara.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "20850"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"i8OPIXnba1x4Gf+74hMk/Nbck3nMKDdQAjTwQvlu/vg=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 14 Jul 2025 06:04:30 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-i8OPIXnba1x4Gf+74hMk/Nbck3nMKDdQAjTwQvlu/vg="
+        }
+      ]
+    },
+    {
+      "Route": "images/pho_bo_tai.ein91g9fht.jpg",
+      "AssetFile": "C:\\Users\\Admin\\source\\repos\\tanbui\\montanbui\\montanbui\\wwwroot\\images\\pho_bo_tai.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "60342"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"uu+CvPRvEHLfrhZKVY3v8FtZqvRuGPHRnORQehavQBQ=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 14 Jul 2025 06:06:58 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "ein91g9fht"
+        },
+        {
+          "Name": "label",
+          "Value": "images/pho_bo_tai.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-uu+CvPRvEHLfrhZKVY3v8FtZqvRuGPHRnORQehavQBQ="
+        }
+      ]
+    },
+    {
+      "Route": "images/pho_bo_tai.jpg",
+      "AssetFile": "C:\\Users\\Admin\\source\\repos\\tanbui\\montanbui\\montanbui\\wwwroot\\images\\pho_bo_tai.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "60342"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"uu+CvPRvEHLfrhZKVY3v8FtZqvRuGPHRnORQehavQBQ=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 14 Jul 2025 06:06:58 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-uu+CvPRvEHLfrhZKVY3v8FtZqvRuGPHRnORQehavQBQ="
+        }
+      ]
+    },
+    {
+      "Route": "images/pizza_haisan.jpg",
+      "AssetFile": "C:\\Users\\Admin\\source\\repos\\tanbui\\montanbui\\montanbui\\wwwroot\\images\\pizza_haisan.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "206455"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"3uPGI5D1h0eh3ksJLYvQLSSoJj3RuKR+Ys+7kbMxlAg=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 13 Jul 2025 13:22:09 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-3uPGI5D1h0eh3ksJLYvQLSSoJj3RuKR+Ys+7kbMxlAg="
+        }
+      ]
+    },
+    {
+      "Route": "images/pizza_haisan.u90fp1t9u8.jpg",
+      "AssetFile": "C:\\Users\\Admin\\source\\repos\\tanbui\\montanbui\\montanbui\\wwwroot\\images\\pizza_haisan.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "206455"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"3uPGI5D1h0eh3ksJLYvQLSSoJj3RuKR+Ys+7kbMxlAg=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 13 Jul 2025 13:22:09 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "u90fp1t9u8"
+        },
+        {
+          "Name": "label",
+          "Value": "images/pizza_haisan.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-3uPGI5D1h0eh3ksJLYvQLSSoJj3RuKR+Ys+7kbMxlAg="
+        }
+      ]
+    },
+    {
+      "Route": "images/salad_raucu.jpg",
+      "AssetFile": "C:\\Users\\Admin\\source\\repos\\tanbui\\montanbui\\montanbui\\wwwroot\\images\\salad_raucu.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "34284"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"6OYTcqxoPRCMCoJruHKp0lHVb5ZEwQNz//+sPvBNOZY=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 14 Jul 2025 06:03:16 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-6OYTcqxoPRCMCoJruHKp0lHVb5ZEwQNz//+sPvBNOZY="
+        }
+      ]
+    },
+    {
+      "Route": "images/salad_raucu.wq1psu3tz4.jpg",
+      "AssetFile": "C:\\Users\\Admin\\source\\repos\\tanbui\\montanbui\\montanbui\\wwwroot\\images\\salad_raucu.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "34284"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"6OYTcqxoPRCMCoJruHKp0lHVb5ZEwQNz//+sPvBNOZY=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 14 Jul 2025 06:03:16 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "wq1psu3tz4"
+        },
+        {
+          "Name": "label",
+          "Value": "images/salad_raucu.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-6OYTcqxoPRCMCoJruHKp0lHVb5ZEwQNz//+sPvBNOZY="
+        }
+      ]
+    },
+    {
+      "Route": "images/trasua_tranchau.bcurksptux.jpg",
+      "AssetFile": "C:\\Users\\Admin\\source\\repos\\tanbui\\montanbui\\montanbui\\wwwroot\\images\\trasua_tranchau.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "396349"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"pdmpi5wJmNyYRNLwU5QJp28BgCL4PWpqIDh1QvlRkkw=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 14 Jul 2025 06:12:01 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "bcurksptux"
+        },
+        {
+          "Name": "label",
+          "Value": "images/trasua_tranchau.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-pdmpi5wJmNyYRNLwU5QJp28BgCL4PWpqIDh1QvlRkkw="
+        }
+      ]
+    },
+    {
+      "Route": "images/trasua_tranchau.jpg",
+      "AssetFile": "C:\\Users\\Admin\\source\\repos\\tanbui\\montanbui\\montanbui\\wwwroot\\images\\trasua_tranchau.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "396349"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"pdmpi5wJmNyYRNLwU5QJp28BgCL4PWpqIDh1QvlRkkw=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 14 Jul 2025 06:12:01 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-pdmpi5wJmNyYRNLwU5QJp28BgCL4PWpqIDh1QvlRkkw="
         }
       ]
     },
@@ -6263,7 +7293,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 25 Jun 2025 03:39:24 GMT"
+          "Value": "Mon, 14 Jul 2025 00:48:11 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -6308,7 +7338,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 25 Jun 2025 03:39:24 GMT"
+          "Value": "Mon, 14 Jul 2025 00:48:11 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -6353,7 +7383,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 25 Jun 2025 03:39:24 GMT"
+          "Value": "Mon, 14 Jul 2025 00:48:11 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -6390,7 +7420,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 25 Jun 2025 03:39:24 GMT"
+          "Value": "Mon, 14 Jul 2025 00:48:11 GMT"
         },
         {
           "Name": "Cache-Control",

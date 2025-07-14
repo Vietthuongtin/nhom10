@@ -21,7 +21,7 @@ namespace montanbui.Controllers
         // GET: KhachHangs
         public async Task<IActionResult> Index()
         {
-            return View(await _context.KhachHangs.ToListAsync());
+            return View(await _context.KhachHang.ToListAsync());
         }
 
         // GET: KhachHangs/Details/5
@@ -32,7 +32,7 @@ namespace montanbui.Controllers
                 return NotFound();
             }
 
-            var khachHang = await _context.KhachHangs
+            var khachHang = await _context.KhachHang
                 .FirstOrDefaultAsync(m => m.MaKH == id);
             if (khachHang == null)
             {
@@ -72,7 +72,7 @@ namespace montanbui.Controllers
                 return NotFound();
             }
 
-            var khachHang = await _context.KhachHangs.FindAsync(id);
+            var khachHang = await _context.KhachHang.FindAsync(id);
             if (khachHang == null)
             {
                 return NotFound();
@@ -123,7 +123,7 @@ namespace montanbui.Controllers
                 return NotFound();
             }
 
-            var khachHang = await _context.KhachHangs
+            var khachHang = await _context.KhachHang
                 .FirstOrDefaultAsync(m => m.MaKH == id);
             if (khachHang == null)
             {
@@ -138,10 +138,10 @@ namespace montanbui.Controllers
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> DeleteConfirmed(int id)
         {
-            var khachHang = await _context.KhachHangs.FindAsync(id);
+            var khachHang = await _context.KhachHang.FindAsync(id);
             if (khachHang != null)
             {
-                _context.KhachHangs.Remove(khachHang);
+                _context.KhachHang.Remove(khachHang);
             }
 
             await _context.SaveChangesAsync();
@@ -150,7 +150,7 @@ namespace montanbui.Controllers
 
         private bool KhachHangExists(int id)
         {
-            return _context.KhachHangs.Any(e => e.MaKH == id);
+            return _context.KhachHang.Any(e => e.MaKH == id);
         }
     }
 }

@@ -1,0 +1,15 @@
+﻿@{
+    ViewData["Title"] = "Đăng nhập";
+}
+<h2>Đăng nhập</h2>
+
+<form asp-action="DangNhap" method="post">
+    <input type="text" name="tenDangNhap" placeholder="Tên đăng nhập" required />
+    <input type="password" name="matKhau" placeholder="Mật khẩu" required />
+    <button type="submit">Đăng nhập</button>
+</form>
+
+@if (ViewBag.ThongBao != null)
+{
+    <p style="color:red">@ViewBag.ThongBao</p>
+}

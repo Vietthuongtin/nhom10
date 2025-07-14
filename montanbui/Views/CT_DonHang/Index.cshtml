@@ -1,53 +1,42 @@
 ﻿@model IEnumerable<montanbui.Models.CT_DonHang>
 
 @{
-    ViewData["Title"] = "Index";
+    ViewData["Title"] = "Chi Tiết Đơn Hàng";
 }
 
-<h1>Index</h1>
+<h2 class="mb-4">📦 Danh Sách Chi Tiết Đơn Hàng</h2>
 
-<p>
-    <a asp-action="Create">Create New</a>
-</p>
-<table class="table">
-    <thead>
+
+<table class="table table-bordered table-striped">
+    <thead class="table-dark">
         <tr>
-            <th>
-                @Html.DisplayNameFor(model => model.DonHang)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.MonAn)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.SoLuong)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.DonGia)
-            </th>
-            <th></th>
+            <th>Mã Đơn</th>
+            <th>Tên Món</th>
+            <th>Số Lượng</th>
+            <th>Đơn Giá</th>
+            <th>Tổng tiền</th>
+            <th>Thao Tác</th>
+          
         </tr>
     </thead>
     <tbody>
-@foreach (var item in Model) {
-        <tr>
-            <td>
-                @Html.DisplayFor(modelItem => item.DonHang.TrangThai)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.MonAn.TenMon)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.SoLuong)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.DonGia)
-            </td>
-            <td>
-                <a asp-action="Edit" asp-route-id="@item.MaCT">Edit</a> |
-                <a asp-action="Details" asp-route-id="@item.MaCT">Details</a> |
-                <a asp-action="Delete" asp-route-id="@item.MaCT">Delete</a>
-            </td>
-        </tr>
-}
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>@item.MaDH</td>
+                <td>@item.MonAn?.TenMon</td>
+                <td>@item.SoLuong</td>
+                <td>@item.DonGia.ToString("N0") ₫</td>
+
+                <td>@String.Format("{0:N0} ₫", item.SoLuong * item.DonGia)</td>
+
+
+                <td>
+            
+                  
+                    <a asp-action="Delete" asp-route-id="@item.MaCT" class="btn btn-sm btn-danger">🗑️ Xóa</a>
+                </td>
+            </tr>
+        }
     </tbody>
 </table>

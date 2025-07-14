@@ -3,71 +3,84 @@
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>@ViewData["Title"] - montanbui</title>
+    <title>@ViewData["Title"] - FastFoodManager</title>
     <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
-    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
-    <link rel="stylesheet" href="~/montanbui.styles.css" asp-append-version="true" />
-
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
-
-
+    <link rel="stylesheet" href="~/css/site.css" />
 </head>
-<!-- Bootstrap JS -->
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-
-
 <body>
     <header>
-  
-        <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm sticky-top custom-navbar">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark shadow-sm">
             <div class="container-fluid">
-                <a class="navbar-brand fw-bold text-danger fs-3" href="/">
-                    🍔 FastFood<span class="text-primary">Manager</span>
+                <a class="navbar-brand text-warning fw-bold" asp-controller="Home" asp-action="Index">
+                    🍔 FastFood <span class="text-primary">Manager</span>
                 </a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav">
                     <span class="navbar-toggler-icon"></span>
                 </button>
 
-                <div class="collapse navbar-collapse" id="navbarNavDropdown">
-                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0 gap-2">
+                <div class="collapse navbar-collapse" id="mainNav">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                         <li class="nav-item">
-                            <a class="nav-link active" href="/MonAns">🧾 Thực đơn</a>
+                            <a class="nav-link" asp-controller="Home" asp-action="Index">🏠 Trang chủ</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="/LoaiMonAns">🍱 Loại món</a>
+                            <a class="nav-link" asp-controller="MonAns" asp-action="Index">🍽 Món ăn</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="/DonHangs">📦 Đơn hàng</a>
+                            <a class="nav-link" asp-controller="LoaiMonAns" asp-action="Index">📂 Loại món</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="/NhanViens">👨‍🍳 Nhân viên</a>
+                            <a class="nav-link" asp-controller="DonHangs" asp-action="Index">📦 Đơn hàng</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="/KhachHangs">👤 Khách hàng</a>
+                            <a class="nav-link" asp-controller="NhanViens" asp-action="Index">👨‍🍳 Nhân viên</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="/PhanHois">💬 Phản hồi</a>
+                            <a class="nav-link" asp-controller="KhachHangs" asp-action="Index">🧑‍💼 Khách hàng</a>
                         </li>
+                        <li class="nav-item">
+                            <a class="nav-link" asp-controller="PhanHois" asp-action="Index">💬 Phản hồi</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" asp-controller="CT_DonHang" asp-action="Index">Chi Tiết Đơn Hàng</a>
+                        </li>
+                    </ul>
+
+                    <ul class="navbar-nav ms-auto">
+                        @if (Context.Session.GetString("TenDangNhap") != null)
+                        {
+                            <li class="nav-item">
+                                <span class="nav-link text-success">👋 Xin chào, @Context.Session.GetString("TenDangNhap")</span>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-danger" asp-controller="DangNhaps" asp-action="DangXuat">🔓 Đăng xuất</a>
+                            </li>
+                        }
+                        else
+                        {
+                            <li class="nav-item">
+                                <a class="nav-link text-primary" asp-controller="DangNhaps" asp-action="Index">🔐 Đăng nhập</a>
+                            </li>
+                        }
                     </ul>
                 </div>
             </div>
         </nav>
-
     </header>
-    <div class="container">
-        <main role="main" class="pb-3">
-            @RenderBody()
-        </main>
+
+    <div class="container mt-4">
+        @RenderBody()
     </div>
 
-    <footer class="border-top footer text-muted">
-        <div class="container">
-            &copy; 2025 - montanbui - <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
+    <footer class="border-top footer text-muted mt-5">
+        <div class="container">     
+            <a> Địa Chỉ Quán Số Nhà 123, NGÕ 456, Xã 789, Thành Phố Bồi Đầm Già</a>
         </div>
     </footer>
+
     <script src="~/lib/jquery/dist/jquery.min.js"></script>
     <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
     <script src="~/js/site.js" asp-append-version="true"></script>
-    @await RenderSectionAsync("Scripts", required: false)
+    @RenderSection("Scripts", required: false)
 </body>
 </html>

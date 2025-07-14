@@ -36,6 +36,6 @@ namespace montanbui.Models
 
         [Display(Name = "Ghi chú")]
         [StringLength(200)]
-        public string GhiChu { get; set; }
+        public string? GhiChu { get; set; }
     }
 }

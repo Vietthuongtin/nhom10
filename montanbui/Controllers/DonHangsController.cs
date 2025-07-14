@@ -21,7 +21,7 @@ namespace montanbui.Controllers
         // GET: DonHangs
         public async Task<IActionResult> Index()
         {
-            var dataHe = _context.DonHangs.Include(d => d.KhachHang).Include(d => d.NhanVien);
+            var dataHe = _context.DonHang.Include(d => d.KhachHang).Include(d => d.NhanVien);
             return View(await dataHe.ToListAsync());
         }
 
@@ -33,7 +33,7 @@ namespace montanbui.Controllers
                 return NotFound();
             }
 
-            var donHang = await _context.DonHangs
+            var donHang = await _context.DonHang
                 .Include(d => d.KhachHang)
                 .Include(d => d.NhanVien)
                 .FirstOrDefaultAsync(m => m.MaDH == id);
@@ -48,8 +48,8 @@ namespace montanbui.Controllers
         // GET: DonHangs/Create
         public IActionResult Create()
         {
-            ViewData["MaKH"] = new SelectList(_context.KhachHangs, "MaKH", "HoTen");
-            ViewData["MaNV"] = new SelectList(_context.NhanViens, "MaNV", "HoTen");
+            ViewData["MaKH"] = new SelectList(_context.KhachHang, "MaKH", "HoTen");
+            ViewData["MaNV"] = new SelectList(_context.NhanVien, "MaNV", "HoTen");
             return View();
         }
 
@@ -66,8 +66,8 @@ namespace montanbui.Controllers
                 await _context.SaveChangesAsync();
                 return RedirectToAction(nameof(Index));
             }
-            ViewData["MaKH"] = new SelectList(_context.KhachHangs, "MaKH", "HoTen", donHang.MaKH);
-            ViewData["MaNV"] = new SelectList(_context.NhanViens, "MaNV", "HoTen", donHang.MaNV);
+            ViewData["MaKH"] = new SelectList(_context.KhachHang, "MaKH", "HoTen", donHang.MaKH);
+            ViewData["MaNV"] = new SelectList(_context.NhanVien, "MaNV", "HoTen", donHang.MaNV);
             return View(donHang);
         }
 
@@ -79,13 +79,13 @@ namespace montanbui.Controllers
                 return NotFound();
             }
 
-            var donHang = await _context.DonHangs.FindAsync(id);
+            var donHang = await _context.DonHang.FindAsync(id);
             if (donHang == null)
             {
                 return NotFound();
             }
-            ViewData["MaKH"] = new SelectList(_context.KhachHangs, "MaKH", "HoTen", donHang.MaKH);
-            ViewData["MaNV"] = new SelectList(_context.NhanViens, "MaNV", "HoTen", donHang.MaNV);
+            ViewData["MaKH"] = new SelectList(_context.KhachHang, "MaKH", "HoTen", donHang.MaKH);
+            ViewData["MaNV"] = new SelectList(_context.NhanVien, "MaNV", "HoTen", donHang.MaNV);
             return View(donHang);
         }
 
@@ -121,8 +121,8 @@ namespace montanbui.Controllers
                 }
                 return RedirectToAction(nameof(Index));
             }
-            ViewData["MaKH"] = new SelectList(_context.KhachHangs, "MaKH", "HoTen", donHang.MaKH);
-            ViewData["MaNV"] = new SelectList(_context.NhanViens, "MaNV", "HoTen", donHang.MaNV);
+            ViewData["MaKH"] = new SelectList(_context.KhachHang, "MaKH", "HoTen", donHang.MaKH);
+            ViewData["MaNV"] = new SelectList(_context.NhanVien, "MaNV", "HoTen", donHang.MaNV);
             return View(donHang);
         }
 
@@ -134,7 +134,7 @@ namespace montanbui.Controllers
                 return NotFound();
             }
 
-            var donHang = await _context.DonHangs
+            var donHang = await _context.DonHang
                 .Include(d => d.KhachHang)
                 .Include(d => d.NhanVien)
                 .FirstOrDefaultAsync(m => m.MaDH == id);
@@ -151,10 +151,10 @@ namespace montanbui.Controllers
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> DeleteConfirmed(int id)
         {
-            var donHang = await _context.DonHangs.FindAsync(id);
+            var donHang = await _context.DonHang.FindAsync(id);
             if (donHang != null)
             {
-                _context.DonHangs.Remove(donHang);
+                _context.DonHang.Remove(donHang);
             }
 
             await _context.SaveChangesAsync();
@@ -163,7 +163,38 @@ namespace montanbui.Controllers
 
         private bool DonHangExists(int id)
         {
-            return _context.DonHangs.Any(e => e.MaDH == id);
+            return _context.DonHang.Any(e => e.MaDH == id);
         }
+        [HttpPost]
+        public async Task<IActionResult> Mua(int maMon, decimal giaBan)
+        {
+            // Giả sử MaKH = 1, MaNV = 1 để test
+            var hoaDon = new DonHang
+            {
+                MaKH = 1,
+                MaNV = 1,
+                NgayDat = DateTime.Now,
+                TrangThai = "Chờ xác nhận",
+                TongTien = giaBan,
+                GhiChu = "",
+            };
+
+            _context.DonHang.Add(hoaDon);
+            await _context.SaveChangesAsync();
+
+            var chiTiet = new CT_DonHang
+            {
+                MaDH = hoaDon.MaDH,
+                MaMon = maMon,
+                SoLuong = 1,
+                DonGia = giaBan
+            };
+
+            _context.CT_DonHang.Add(chiTiet);
+            await _context.SaveChangesAsync();
+
+            return RedirectToAction("Index", "MonAns");
+        }
+
     }
 }

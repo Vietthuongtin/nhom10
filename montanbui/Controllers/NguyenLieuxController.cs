@@ -21,7 +21,7 @@ namespace montanbui.Controllers
         // GET: NguyenLieux
         public async Task<IActionResult> Index()
         {
-            return View(await _context.NguyenLieus.ToListAsync());
+            return View(await _context.NguyenLieu.ToListAsync());
         }
 
         // GET: NguyenLieux/Details/5
@@ -32,7 +32,7 @@ namespace montanbui.Controllers
                 return NotFound();
             }
 
-            var nguyenLieu = await _context.NguyenLieus
+            var nguyenLieu = await _context.NguyenLieu
                 .FirstOrDefaultAsync(m => m.MaNL == id);
             if (nguyenLieu == null)
             {
@@ -72,7 +72,7 @@ namespace montanbui.Controllers
                 return NotFound();
             }
 
-            var nguyenLieu = await _context.NguyenLieus.FindAsync(id);
+            var nguyenLieu = await _context.NguyenLieu.FindAsync(id);
             if (nguyenLieu == null)
             {
                 return NotFound();
@@ -123,7 +123,7 @@ namespace montanbui.Controllers
                 return NotFound();
             }
 
-            var nguyenLieu = await _context.NguyenLieus
+            var nguyenLieu = await _context.NguyenLieu
                 .FirstOrDefaultAsync(m => m.MaNL == id);
             if (nguyenLieu == null)
             {
@@ -138,10 +138,10 @@ namespace montanbui.Controllers
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> DeleteConfirmed(int id)
         {
-            var nguyenLieu = await _context.NguyenLieus.FindAsync(id);
+            var nguyenLieu = await _context.NguyenLieu.FindAsync(id);
             if (nguyenLieu != null)
             {
-                _context.NguyenLieus.Remove(nguyenLieu);
+                _context.NguyenLieu.Remove(nguyenLieu);
             }
 
             await _context.SaveChangesAsync();
@@ -150,7 +150,7 @@ namespace montanbui.Controllers
 
         private bool NguyenLieuExists(int id)
         {
-            return _context.NguyenLieus.Any(e => e.MaNL == id);
+            return _context.NguyenLieu.Any(e => e.MaNL == id);
         }
     }
 }

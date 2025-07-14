@@ -18,11 +18,8 @@ namespace montanbui.Controllers
             _context = context;
         }
 
-        // GET: LoaiMonAns
-        public async Task<IActionResult> Index()
-        {
-            return View(await _context.LoaiMonAns.ToListAsync());
-        }
+       
+       
 
         // GET: LoaiMonAns/Details/5
         public async Task<IActionResult> Details(int? id)
@@ -32,7 +29,7 @@ namespace montanbui.Controllers
                 return NotFound();
             }
 
-            var loaiMonAn = await _context.LoaiMonAns
+            var loaiMonAn = await _context.LoaiMonAn
                 .FirstOrDefaultAsync(m => m.MaLoai == id);
             if (loaiMonAn == null)
             {
@@ -72,7 +69,7 @@ namespace montanbui.Controllers
                 return NotFound();
             }
 
-            var loaiMonAn = await _context.LoaiMonAns.FindAsync(id);
+            var loaiMonAn = await _context.LoaiMonAn.FindAsync(id);
             if (loaiMonAn == null)
             {
                 return NotFound();
@@ -123,7 +120,7 @@ namespace montanbui.Controllers
                 return NotFound();
             }
 
-            var loaiMonAn = await _context.LoaiMonAns
+            var loaiMonAn = await _context.LoaiMonAn
                 .FirstOrDefaultAsync(m => m.MaLoai == id);
             if (loaiMonAn == null)
             {
@@ -138,10 +135,10 @@ namespace montanbui.Controllers
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> DeleteConfirmed(int id)
         {
-            var loaiMonAn = await _context.LoaiMonAns.FindAsync(id);
+            var loaiMonAn = await _context.LoaiMonAn.FindAsync(id);
             if (loaiMonAn != null)
             {
-                _context.LoaiMonAns.Remove(loaiMonAn);
+                _context.LoaiMonAn.Remove(loaiMonAn);
             }
 
             await _context.SaveChangesAsync();
@@ -150,7 +147,22 @@ namespace montanbui.Controllers
 
         private bool LoaiMonAnExists(int id)
         {
-            return _context.LoaiMonAns.Any(e => e.MaLoai == id);
+            return _context.LoaiMonAn.Any(e => e.MaLoai == id);
         }
+        public async Task<IActionResult> Index(string searchString)
+        {
+            var loaiMonQuery = from l in _context.LoaiMonAn
+                               select l;
+
+            if (!string.IsNullOrEmpty(searchString))
+            {
+                loaiMonQuery = loaiMonQuery.Where(l => l.TenLoai.Contains(searchString));
+            }
+
+            return View(await loaiMonQuery.ToListAsync());
+        }
+
     }
+
 }
+
